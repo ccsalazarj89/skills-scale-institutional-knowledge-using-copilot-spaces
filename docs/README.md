@@ -4,7 +4,37 @@ This README provides a brief summary of OctoAcme's project management processes 
 
 ## Quick summary
 
-OctoAcme runs projects iteratively with clear ownership, a lightweight initiation step (one-pager & stakeholder alignment), regular planning and delivery rhythms, a focus on quality/testing, and explicit risk & communication practices. Key activities include project initiation (one-pager & stakeholder alignment), planning (backlog, estimates, DoD), execution (PR workflow, CI, testing), release & deployment (pre-release checks and rollback plans), and retrospectives to capture improvements.
+OctoAcme runs projects iteratively with clear ownership, a lightweight initiation step (one-pager & stakeholder alignment), regular planning and delivery rhythms, a focus on quality and testing, and explicit risk & communication practices. Key activities include project initiation, planning, execution, release & deployment, and retrospectives to capture improvements.
+
+## Overview of Project Management Processes
+
+OctoAcme uses an iterative, outcome-driven process oriented around small, verifiable increments:
+
+- Initiation
+  - Create a lightweight One-pager: problem, objective, success metrics, stakeholders.
+  - Confirm sponsor and decide go/no-go for planning.
+
+- Planning
+  - Kickoff with stakeholders and delivery team.
+  - Build a prioritized backlog with acceptance criteria and estimates.
+  - Define the Definition of Done and a high-level release/milestone plan.
+  - Identify dependencies and risks; add them to the Risk Register.
+
+- Execution
+  - Implement in small PRs with acceptance criteria linked to issues.
+  - Run CI (tests, linting, security scans) before requesting reviews.
+  - Team cadence: regular standups, weekly delivery syncs, demo/review at end of sprint.
+  - QA: unit, integration, and smoke tests as appropriate.
+
+- Release & Deployment
+  - Follow pre-release checklist (passing CI, release notes, rollback plan).
+  - Deploy to staging, run smoke tests, then to production via automated pipelines when possible.
+  - Post-deploy verification and stakeholder communication.
+
+- Continuous Improvement
+  - Run retrospectives after sprints/releases/incidents.
+  - Capture 2–3 actionable improvements and track them as issues with owners and due dates.
+  - Review outstanding action items in weekly PM syncs.
 
 ## Process documents
 
@@ -17,15 +47,15 @@ OctoAcme runs projects iteratively with clear ownership, a lightweight initiatio
 - [Retrospective & Continuous Improvement](octoacme-retrospective-and-continuous-improvement.md)
 - [Roles & Personas](octoacme-roles-and-personas.md)
 
-> Note: These links are relative to this docs/ folder. If you move this README to the repo root, update the links to include the docs/ prefix (e.g., `docs/octoacme-project-management-overview.md`).
+> Note: This file lives in docs/, so links above are relative to the docs/ folder.
 
 ## How to use
 
-- Add this README to the repo under docs/ as `docs/README.md` (or to the repo root as `README.md`).
+- Keep this file at docs/README.md as the index for process docs.
 - Link to it from the project README and onboarding materials.
-- Keep the links updated when process docs change or new docs are added.
+- Update links and summaries when process documents change or new docs are added.
 
 ## Maintenance
 
-- Owners of each process document should update the corresponding file when changes are approved.
-- Consider adding this README to a periodic docs review checklist (quarterly) to ensure accuracy.
+- Each process doc owner should keep their file up to date.
+- Consider adding this README to a quarterly docs review checklist to ensure accuracy.
